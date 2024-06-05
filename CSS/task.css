@@ -1,0 +1,41 @@
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #39393964;
+    color: white;
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(249, 249, 249);
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: #d80202;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: #d80202;
+    opacity: 1;
+  }
+  h1{
+    color: white;
+  }
+
+  .contain{
+    width: 100%;
+    max-width: 540px;
+    background: rgba(255, 255, 255, 0.205);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undone tasks</title>
+    <link rel="icon" type="image/x-icon" href="/img/done.png" />
+    <link rel="stylesheet" href="CSS/task.css" />
+    <link rel="stylesheet" href="CSS/1.css" />
+    <link rel="stylesheet" href="CSS/undone.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  
+  <body onload="time()">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>completed tasks</li>
+    </ul>
+
+    <div class="todo-container">
+      <div class="date-hour">
+        <p id="date">Date</p>
+        <p id="hour">Hour</p>
+      </div>
+      <header><h2>completed tasks List</h2></header>
+
+      <!-- task List -->
+      <div class="todo-list" id="todo-list">
+        <div class="todo">
+          <h3>some default completed task</h3>
+          <button class="remove-todo"><i class="fa fa-close"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/undone.js"></script>
+  </body>
+</html>

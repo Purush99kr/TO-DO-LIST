@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undone tasks</title>
+    <link rel="icon" type="image/x-icon" href="/img/undone.png" />
+    <link rel="stylesheet" href="CSS/task.css" />
+    <link rel="stylesheet" href="CSS/1.css" />
+    <link rel="stylesheet" href="CSS/undone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body onload="time()">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>Undone Tasks</li>
+    </ul>
+    <!-- <div class="contain">
+      <h1>Welcome to Upcoming tasks.</h1>
+    </div> -->
+    <div class="todo-container">
+      <div class="date-hour">
+        <p id="date">Date</p>
+        <p id="hour">Hour</p>
+      </div>
+      <header><h2>Undone List</h2></header>
+
+      <!--Add task,form -->
+      <form action="" id="todo-form">
+        <p>Add Your Task Here</p>
+        <div class="form-control">
+          <input type="text" id="todo-input" placeholder="Add your task here" />
+          <button type="submit"><i class="fa fa-plus"></i></button>
+        </div>
+      </form>
+
+      <!-- edit task,form -->
+      <form action="" id="edit-form" class="hide">
+        <p>Edit Your Task</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" placeholder="Add your next task here" />
+          <button type="submit"><i class="fa fa-check"></i></button>
+        </div>
+        <button  type="button" id="cancel-edit-btn">Cancel</button>
+      </form>
+
+      <!-- task List -->
+      <div class="todo-list" id="todo-list">
+        <div class="todo">
+            <h3>some default task</h3>
+            <button class="finish-todo"><i class="fa fa-check"></i></button>
+            <button class="edit-todo"><i class="fa fa-pencil"></i></button>
+            <button class="remove-todo"><i class="fa fa-close"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/undone.js"></script>
+  </body>
+</html>
